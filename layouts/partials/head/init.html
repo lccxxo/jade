@@ -1,0 +1,4 @@
+{{- $version := int (index (split hugo.Version ".") 1) -}}
+{{- if lt $version 124 -}}
+  {{- warnf "Current Hugo version is less than 0.124.0. Please upgrade Hugo: https://github.com/gohugoio/hugo/releases" -}}
+{{- end -}}

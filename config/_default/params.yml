@@ -1,0 +1,1244 @@
+﻿########################################
+# Basic Configuration
+########################################
+
+# main menu navigation
+# for more icon information, please visit https://github.com/D-Sketon/hexo-theme-reimu/issues/30
+menu:
+  - name: home
+    url: ""
+    icon: false
+  - name: archives
+    url: "archives"
+    icon: false
+  - name: about
+    url: "about"
+    icon: false
+  - name: friend
+    url: "friend"
+    icon: false
+
+mainSections: ["post"]
+# 骞达紝鏈堬紝鏃ュ強鏃堕棿鐨勬牸寮忓寲鏍峰紡
+# Format style for year,month,date & time
+yearFormat: "2006"
+monthFormat: "2006-01"
+dateFormat: "2006-01-02"
+timeFormat: "2006-01-02 15:04:05"
+
+author: Jade
+# email: xxx@example.com
+description: "..."
+subtitle:
+  typing:
+    enable: false
+    strings:
+      - Sentence 1
+      - Sentence 2
+      - Sentence 3
+      - Sentence 4
+    typeSpeed: 100              # 鎵撳瓧閫熷害锛堟绉?瀛楃锛?
+    backSpeed: 50               # 鍒犻櫎閫熷害锛堟绉?瀛楃锛?
+    backDelay: 2000             # 鎵撳畬涓€鍙ヨ瘽鍚庯紝绛夊緟鏃堕棿
+    startDelay: 300             # 椤甸潰鍔犺浇鍚庯紝绛夊緟鏃堕棿
+    loop: true                  # 鏄惁寰幆鎾斁
+    shuffle: true              # 鏄惁闅忔満杈撳嚭鍙ュ瓙
+    showCursor: true            # 鏄惁鏄剧ず闂儊鐨勫瓧绗?
+    cursorChar: "|"             # 瀛楃
+    smartBackspace: false       # 鏅鸿兘閫€鏍硷紝鍙垹闄や笉鍚岀殑閮ㄥ垎
+  text: " "        # 褰?typing.enable = false 鏃朵娇鐢?
+
+banner: "images/p7260478-by-sophearak-tha.jpg"
+# You can also write it in the form of the following url
+# banner: "https://example.com"
+
+# If you want to use the srcset attribute, please enable it
+banner_srcset:
+  enable: false
+  srcset:
+    - src: "images/banner-600w.webp"
+      media: "(max-width: 479px)"
+    - src: "images/banner-800w.webp"
+      media: "(max-width: 799px)"
+    - src: "images/banner.webp"
+      media: "(min-width: 800px)"
+
+avatar: "avatar.png"
+
+# Control the display of the post cover
+# If not set, the banner image will be displayed by default
+# Its priority is lower than the cover in the Front-matter
+cover: false # https://example.com / false / rgb(255,117,117)
+
+# Control the display of the post toc
+# Its priority is lower than the toc in the Front-matter
+toc: true
+
+# Open Graph
+open_graph:
+  enable: true
+  options:
+    #twitter_card: <twitter:card>
+    #twitter_id: <twitter:creator>
+    #twitter_site: <twitter:site>
+    #twitter_image: <twitter:image>
+    #google_plus: <g+:profile_link>
+    #fb_admins: <fb:admin_id>
+    #fb_app_id: <fb:app_id>
+
+# Content
+excerpt_link: Read More
+
+# Footer copyright
+# Inject code snippet right in the footer copyright
+# Make sure your code snippet is safeHTML
+copyright:
+# Need help choosing? Please see...
+# https://creativecommons.org/choose/
+# https://choosealicense.com/
+# copyright: |-
+#   <div style="flex-direction:column;align-items: center;"><a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a>
+#   All website licensed under <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a></div>
+
+footer:
+  since: 2020 # 2020-current year
+  powered: true
+  count: true
+  busuanzi: true
+  icon:
+    url: "" # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
+    rotate: true
+    mask: false # whether to use the images as a mask
+
+# Sidebar
+# sidebar: right # deprecated, use sidebar.position instead
+sidebar:
+  position: left
+  menu: true  # whether to show the sidebar menu button, ignored on mobile devices
+  article:
+    show_common: true # whether to show common sidebar, ignored on mobile devices
+
+social:
+  email: mailto:xxx@gmail.com
+  github: https://github.com/yourname
+  # google: https://plus.google.com/yourname
+  # twitter: https://twitter.com/yourname
+  # facebook: https://www.facebook.com/yourname
+  # instagram: https://www.instagram.com/yourname
+  # linkedin: https://www.linkedin.com/in/yourname
+  # pinterest: https://www.pinterest.com/yourname
+  # youtube: https://www.youtube.com/channel/yourname
+  # vimeo: https://vimeo.com/yourname
+  # flickr: https://www.flickr.com/photos/yourname
+  # dribbble: https://dribbble.com/yourname
+  # behance: https://www.behance.net/yourname
+  # bilibili: https://space.bilibili.com/yourname
+  # weibo: https://weibo.com/yourname
+  # zhihu: https://www.zhihu.com/people/yourname
+  # reddit: https://www.reddit.com/user/yourname
+  # tumblr: https://yourname.tumblr.com
+  # medium: https://medium.com/@yourname
+  # deviantart: https://yourname.deviantart.com
+  # stackoverflow: https://stackoverflow.com/users/yourname
+  # keybase: https://keybase.io/yourname
+  # telegram: https://t.me/yourname
+  # discord: https://discordapp.com/users/yourname
+  # steam: https://steamcommunity.com/id/yourname
+  # weixin: 
+  # qq:
+  # tiktok:
+
+widgets:
+  - category
+  - tag
+  - tagcloud
+  - recent_posts
+
+# Widget behavior
+category_limits: 10
+tag_limits: 10
+recent_posts_limits: 5
+tagcloud_limits: 20
+
+# Archive behavior
+only_show_capsule_in_index: false # If you have hugo amounts of tags and categories, you can set this to true to only show the capsule in the index page for better performance
+uppercase_capsule: true # If you want to keep taxonomic capsule unchanged, please set this to false
+
+show_update_time: false # If you want to show the update time, please set this to true
+
+# Summary content
+summary:
+  enable: false
+  style: 'subtitle' # 'subtitle' or 'blockquote'
+
+# RSS output
+rss:
+  limit: 10             # The number of recent articles to be output, write -1 to output all
+  showFullContent: false # output full content or description
+  showCopyright: false   # If true, add copyright to the end of article.
+
+# Sort order configuration
+# Available values: default, date, date-reverse, weight, weight-reverse
+# default: hugo's default sort order for page collections, see https://gohugo.io/quick-reference/page-collections/#sort
+# date: sorted by date in ascending order (oldest first)
+# date-reverse: sorted by date in descending order (newest first)
+# weight: sorted by weight in ascending order
+# weight-reverse: sorted by weight in descending order
+sort_order:
+  taxonomy:
+    category: date-reverse # controlled by categories_weight
+    tag: date-reverse # controlled by tags_weight
+  archive: date-reverse # controlled by weight
+  home: default # controlled by weight
+
+# Pagination
+paginate:
+  archive: # Number of posts per page in archive and taxonomy pages
+  post: 5 # Number of posts per page in home and other list pages
+
+########################################
+# CSS
+########################################
+
+layout:
+  max_width: 1350px # the max width of the main content area
+
+triangle_badge:
+  enable: false
+  icon: github # same as the icon in the social config
+  link: https://github.com/D-Sketon/hugo-theme-reimu
+
+anchor_icon: # default use '#' icon, you can use a hexadecimal representation of fontawesome or icon_font, like 'f0c1', you can also use false to hide anchor icon
+
+reimu_cursor:
+  enable: false
+  cursor:
+    default: ../images/cursor/reimu-cursor-default.png  # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
+    pointer: ../images/cursor/reimu-cursor-pointer.png
+    text: ../images/cursor/reimu-cursor-text.png
+
+icon_font: 4552607_a0oqhord1y
+
+# Font loading strategy
+# Custom Font -> Google Fonts -> Local FallBack Font
+
+# Custom Font
+custom_font:
+  enable: false
+  article:
+    # - css: https://fontsapi.zeoseven.com/292/main/result.css # font css
+    #   name: LXGW WenKai # font name
+  code:
+
+# https://fonts.google.com/
+# Google Fonts, higher priority than local_font
+font:
+  enable: true
+  article:
+    - Mulish
+    - Noto Serif SC
+  code:
+    # - Ubuntu Mono
+    # - Source Code Pro
+    # - JetBrains Mono
+
+# Local FallBack Font
+local_font:
+  article:
+    - "-apple-system"
+    - PingFang SC
+    - Microsoft YaHei
+    - sans-serif
+  code:
+    - Menlo
+    - Monaco
+    - Consolas
+    - monospace
+
+dark_mode:
+  # true means that the dark mode is enabled by default
+  # false means that the dark mode is disabled by default
+  # auto means that the dark mode is automatically switched according to the system settings
+  enable: false # true | false | auto
+
+########################################
+# Analytics
+########################################
+
+baidu_analytics: false
+google_analytics: false
+clarity: false
+
+########################################
+# Markdown Display
+########################################
+
+# mermaid url https://github.com/mermaid-js/mermaid
+mermaid:
+  zoom: false # whether to enable zoom for mermaid diagrams
+
+code_block:
+  # whether to expand the code block by default
+  # true means expand all code blocks by default
+  # false means collapse all code blocks by default
+  # number means collapse the code block by default when the number of lines exceeds the specified value
+  expand: true
+
+# Clipboard configuration
+clipboard:
+  success: 
+    en: Copy successfully (*^鈻絕*)
+    zh-CN: 澶嶅埗鎴愬姛 (*^鈻絕*)
+    zh-TW: 瑜囪＝鎴愬姛 (*^鈻絕*)
+    ja: 銈炽償銉兼垚鍔?(*^鈻絕*)
+    pt-BR: Copiado com sucesso (*^鈻絕*)
+  fail: 
+    en: Copy failed (锞熲娍锞?锞?
+    zh-CN: 澶嶅埗澶辫触 (锞熲娍锞?锞?
+    zh-TW: 瑜囪＝澶辨晽 (锞熲娍锞?锞?
+    ja: 銈炽償銉煎け鏁?(锞熲娍锞?锞?
+    pt-BR: Falha ao copiar (锞熲娍锞?锞?
+  copyright:
+    enable: false
+    count: 50 # The number of characters when the copyright is displayed
+    license_type: by-nc-sa # https://creativecommons.org/licenses
+
+math:
+  katex:
+    enable: true
+  mathjax:
+    enable: false
+    options: # see https://docs.mathjax.org/en/latest/web/configuration.html
+    # we need to put the configuration in an array, because hugo will automatically convert the key to lowercase
+      [
+        {
+          tex:
+            {
+              tags: "ams",
+              useLabelIds: true,
+              inlineMath: [["$", "$"], ['\\(', '\\)']],
+              displayMath: [["$$", "$$"], ['\\[', '\\]']],
+              processEscapes: true,
+              processEnvironments: true,
+              autoload: { color: [], colorv2: ["color"] },
+              packages: { "[+]": ["noerrors"] },
+            },
+          options:
+            {
+              skipHtmlTags:
+                ["script", "noscript", "style", "textarea", "pre", "code"],
+              ignoreHtmlClass: "tex2jax_ignore",
+              processHtmlClass: "tex2jax_process",
+            },
+          loader: { load: ["input/asciimath", "[tex]/noerrors"] },
+        },
+      ]
+
+########################################
+# Comment system
+########################################
+
+# global control of the comment system
+# you can use multiple comment systems at the same time
+# load order: localStorage(user manually selects) -> default
+# -> valine -> waline -> twikoo -> gitalk -> giscus -> disqus
+comment:
+  # comment system title
+  title:
+    en: Leave a comment
+    zh-CN: 璇翠簺浠€涔堝惂锛?
+    zh-TW: 瑾簺浠€楹煎惂锛?
+    ja: 銈炽儭銉炽儓銈掓畫銇?
+    pt-BR: Deixe um coment谩rio
+  default: waline # default comment system, when you enable multiple comment systems
+
+# valine comment system. https://valine.js.org
+# version 1.5.1
+# notify and verify have been deprecated
+valine:
+  enable: false # if you want to use valine,please set this value is true
+  appId: # leancloud application app id
+  appKey: # leancloud application app key
+  pageSize: 10 # comment list page size
+  avatar: mp # gravatar style https://valine.js.org/#/avatar
+  # lang: zh-cn # deprecated, use html.lang instead
+  placeholder: Just go go # valine comment input placeholder(like: Please leave your footprints )
+  guest_info: nick,mail,link #valine comment header info
+  recordIP: true # whether to record the IP address of the commenters
+  highlight: true # whether to highlight the code blocks
+  visitor: false # whether to display the number of visitors
+  serverURLs: # leancloud server url
+
+# https://waline.js.org/
+waline:
+  enable: false
+  serverURL:
+  # lang: zh-CN # deprecated, use html.lang instead
+  locale: {} # https://waline.js.org/guide/features/i18n.html#%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%AD%E8%A8%80
+  emoji:
+    - https://unpkg.com/@waline/emojis@1.2.0/weibo
+    - https://unpkg.com/@waline/emojis@1.2.0/alus
+    - https://unpkg.com/@waline/emojis@1.2.0/bilibili
+    - https://unpkg.com/@waline/emojis@1.2.0/qq
+    - https://unpkg.com/@waline/emojis@1.2.0/tieba
+    - https://unpkg.com/@waline/emojis@1.2.0/tw-emoji
+  meta:
+    - nick
+    - mail
+    - link
+  requiredMeta:
+    - nick
+    - mail
+  wordLimit: 0
+  pageSize: 10
+  pageview: true
+
+# https://twikoo.js.org
+twikoo:
+  enable: false
+  envId: # 鑵捐浜戠幆澧冨～ envId锛沄ercel 鐜濉湴鍧€锛坔ttps://xxx.vercel.app锛?
+  region:
+
+# https://github.com/gitalk/gitalk/blob/master/readme-cn.md
+gitalk:
+  enable: false
+  clientID:
+  clientSecret:
+  repo:
+  owner:
+  admin:
+  md5: false
+
+# https://giscus.app/zh-CN
+giscus:
+  enable: false
+  repo:
+  repoId:
+  category:
+  categoryId:
+  mapping: mapping
+  strict: 0
+  reactionsEnabled: 1
+  emitMetadata: 0
+  inputPosition: bottom
+  theme:
+    light:
+    dark:
+
+# https://disqus.com
+disqus:
+  enable: false
+  shortname: # your disqus shortname
+  count: true
+
+# https://utteranc.es
+utterances:
+  enable: false
+  repo: owner/repo # Change this to "Your GitHub Username/The Repository Name" used for storing blog comments
+  issue_term: title
+  theme: auto # auto means to automatically adapt to dark and light themes, you can also use specific themes like github-light, github-dark, preferred-color-scheme, etc.
+
+########################################
+# Search
+########################################
+
+algolia_search:
+  enable: false
+  appID:
+  apiKey:
+  indexName:
+  hits:
+    per_page: 10
+
+########################################
+# Animation
+########################################
+
+preloader:
+  enable: false
+  text: 
+    zh-CN: 灏戝コ绁堢シ涓?..
+    zh-TW: 灏戝コ绁堢Ρ涓?..
+    en: Loading...
+    ja: 灏戝コ绁堢シ涓?..
+    pt-BR: Carregando...
+  icon: # default use inline svg for fast speed, you can use a image url, like '/images/taichi.png'
+  rotate: true # whether to rotate the icon
+
+# see https://github.com/D-Sketon/aos.js
+animation:
+  enable: true
+  options:
+    header:
+      title: slide-up
+      subTitle: slide-down
+    home:
+      post: fade-up
+      widget: fade-up
+      sidebar: fade-up
+    article:
+      whole: fade-up
+      date: zoom-in
+      category: zoom-in
+      tag: zoom-in
+      comment: zoom-in
+      reading: zoom-in
+      nav: fade-up
+    archive:
+      whole: fade-up
+      tag: zoom-in
+      category: zoom-in
+      section: fade-up
+      nav: fade-up
+
+# see https://github.com/D-Sketon/mouse-firework
+firework:
+  enable: true
+  disable_on_mobile: false
+  options:
+    excludeElements: ["a", "button"]
+    particles:
+      - shape: circle
+        move: ["emit"]
+        easing: easeOutExpo
+        colors: ["var(--red-1)", "var(--red-2)", "var(--red-3)", "var(--red-4)"]
+        number: 20
+        duration: [1200, 1800]
+        shapeOptions:
+          radius: [16, 32]
+          alpha: [0.3, 0.5]
+      - shape: circle
+        move: ["diffuse"]
+        easing: easeOutExpo
+        colors: ["var(--red-0)"]
+        number: 1
+        duration: [1200, 1800]
+        shapeOptions:
+          radius: 20
+          alpha: [0.2, 0.5]
+          lineWidth: 6
+
+########################################
+# Extended features
+########################################
+
+# show the copyright below each article
+article_copyright:
+  enable: false
+  content:
+    author: true
+    link: true
+    title: false
+    date: false
+    updated: false
+    license: true
+    license_type: by-nc-sa # https://creativecommons.org/licenses
+
+# Back To Top
+top:
+  enable: true
+  position: right # left or right
+  icon:
+    url: "../images/taichi.png" # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
+    rotate: true
+    mask: true # whether to use the images as a mask
+
+# whether to display the notification when the article is outdated
+outdate:
+  enable: false
+  daysAgo: 180 # The number of days after which the article is considered outdated
+  message:
+    en: This article was last updated on {time}. Please note that the content may no longer be applicable.
+    zh-CN: 鏈枃鏈€鍚庢洿鏂颁簬 {time}锛岃娉ㄦ剰鏂囦腑鍐呭鍙兘宸蹭笉閫傜敤銆?
+    zh-TW: 鏈枃鏈€寰屾洿鏂版柤 {time}锛岃珛娉ㄦ剰鏂囦腑鍏у鍙兘宸蹭笉閬╃敤銆?
+    ja: 銇撱伄瑷樹簨銇渶绲傛洿鏂版棩锛歿time}銆傝杓夊唴瀹广亴鐝惧湪鏈夊姽銇с仾銇勫彲鑳芥€с亴銇傘倞銇俱仚銇仹銇旀敞鎰忋亸銇犮仌銇勩€?
+    pt-BR: Este artigo foi atualizado pela 煤ltima vez em {time}. Observe que o conte煤do pode n茫o ser mais aplic谩vel.
+
+# ICP 澶囨
+icp:
+  icpnumber: # ICP澶囨鍙?
+  beian: # 缃戝畨澶囨鍙?
+  recordcode: # 缃戝畨澶囨閾炬帴涓殑recordcode鍙傛暟
+
+# 钀屽浗 ICP 澶囨
+moe_icp:
+  icpnumber: # 钀屽浗ICP澶囨鍙?
+
+# Sponsor
+sponsor:
+  enable: false
+  tip: 
+    zh-CN: 璇蜂綔鑰呭枬鏉挅鍟″惂
+    zh-TW: 璜嬩綔鑰呭枬鏉挅鍟″惂
+    en: Buy me a coffee
+    ja: 銈炽兗銉掋兗銈掕卜銇ｃ仸銇忋仩銇曘亜
+    pt-BR: Compre-me um caf茅
+  icon:
+    url: "../images/taichi.png" # this path is relative to the css/main.css, so it needs to go up one level to reach the images folder
+    rotate: true
+    mask: true # whether to use the images as a mask
+  qr:
+    # - name: 鏀粯瀹?
+    #   src: "sponsor/alipay.jpg"
+    # - name: 寰俊
+    #   src: "sponsor/wechat.png"
+
+# Share
+share:
+  # - facebook
+  # - twitter
+  # - linkedin
+  # - reddit
+  # - weibo
+  # - qq
+  # - weixin
+
+# show categories card on home page
+home_categories:
+  enable: false
+  content:
+    - categories: # string (single-layer category) or array (multi-layer category)
+      cover: # empty means random cover
+    - categories:
+      cover:
+
+########################################
+# Experimental features
+########################################
+
+# Inject code snippet
+# Make sure your code snippet is safeHTML
+injector:
+  head_begin: # Inject code snippet right after <head>
+  head_end: |-
+    <style>
+      :root,
+      [data-theme="dark"]:root {
+        --red-0: #b4a492 !important;
+        --red-1: #c6b7a6 !important;
+        --red-2: #d8cbbd !important;
+        --red-3: #e7ddd3 !important;
+        --red-4: #eee6de !important;
+        --red-5: #f4eee8 !important;
+        --red-5-5: #f7f3ef !important;
+        --red-6: #fbf8f5 !important;
+
+        --color-default: #5f584f !important;
+        --color-border: #ddd2c6 !important;
+        --color-link: #8a7b69 !important;
+        --color-background: #f3efea !important;
+        --color-code-background: #f6f1eb !important;
+        --color-header-background: rgba(247, 243, 237, 0.94) !important;
+        --color-footer-background: #f7f3ed !important;
+        --color-mobile-nav-background: #f7f3ed !important;
+        --color-wrap: #fcfaf7 !important;
+        --color-sticky: #f7f3ed !important;
+
+        --color-h2-border: #e5dbd0 !important;
+        --color-meta-shadow: rgba(180, 164, 146, 0.16) !important;
+        --color-hover-shadow: rgba(160, 146, 130, 0.12) !important;
+        --color-h2-after: #c6b7a6 !important;
+        --color-red-6-shadow: rgba(198, 183, 166, 0.3) !important;
+        --color-red-3-shadow: rgba(198, 183, 166, 0.18) !important;
+
+        --highlight-nav: #ece4da !important;
+        --highlight-scrollbar: #d1c4b5 !important;
+        --highlight-background: #f8f4ef !important;
+        --highlight-selection: #ddd2c688 !important;
+        --highlight-foreground: #5f584f !important;
+        --highlight-comment: #978b7d !important;
+        --highlight-red: #8a7b69 !important;
+        --highlight-orange: #9b8a76 !important;
+        --highlight-yellow: #8d7c69 !important;
+        --highlight-green: #7f7568 !important;
+        --highlight-aqua: #807468 !important;
+        --highlight-blue: #756a5f !important;
+        --highlight-purple: #8b8176 !important;
+        --highlight-deletion: #9d8770 !important;
+        --highlight-deletion-bg: #f4ece4 !important;
+        --highlight-addition: #7f7568 !important;
+        --highlight-addition-bg: #f2ece6 !important;
+      }
+
+      body,
+      #container,
+      #wrap {
+        background: var(--color-background) !important;
+        color: var(--color-default) !important;
+      }
+
+      #header-nav {
+        background: rgba(247, 243, 237, 0.94) !important;
+      }
+
+      #header-nav:hover {
+        background: rgba(247, 243, 237, 0.99) !important;
+      }
+
+      #header-nav .main-nav-link,
+      #header-nav .nav-icon,
+      #header-nav .main-nav-link-wrap,
+      #header-nav .select-selected,
+      #header-nav .select-items li {
+        color: #6f6254 !important;
+      }
+
+      #header-nav .select-items li:hover,
+      #header-nav .select-items li.selected {
+        background: #d8cbbd !important;
+        color: #584d42 !important;
+      }
+
+      [data-theme="dark"] #header-nav {
+        background: rgba(247, 243, 237, 0.96) !important;
+      }
+
+      [data-theme="dark"] #header-nav .main-nav-link,
+      [data-theme="dark"] #header-nav .nav-icon,
+      [data-theme="dark"] #header-nav .main-nav-link-wrap,
+      [data-theme="dark"] #header-nav .select-selected,
+      [data-theme="dark"] #header-nav .select-items li {
+        color: #6f6254 !important;
+      }
+
+      a,
+      .article-entry a,
+      .sidebar a,
+      .widget a {
+        color: var(--color-link) !important;
+      }
+
+      .sidebar-top {
+        border: 1px solid var(--color-border);
+        background: rgba(252, 250, 247, 0.96) !important;
+        box-shadow: 0 16px 36px rgba(120, 108, 95, 0.14) !important;
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+        overflow: hidden;
+      }
+
+      .sidebar-top .sidebar-top-taichi {
+        display: none !important;
+      }
+
+      .sidebar-top .arrow-up {
+        position: absolute;
+        inset: 0;
+        display: block;
+        opacity: 1 !important;
+      }
+
+      .sidebar-top:hover .arrow-up {
+        opacity: 1 !important;
+      }
+
+      .sidebar-top .arrow-up:before {
+        left: 0;
+        color: #8a7b69 !important;
+        font-size: 18px !important;
+      }
+
+      .post-wrap.no-cover {
+        height: auto !important;
+        min-height: 232px;
+      }
+
+      .post-wrap.no-cover .post-info {
+        padding: 24px 26px;
+      }
+
+      .post-wrap.no-cover .post-title {
+        padding: 14px 0 18px;
+        white-space: normal;
+      }
+
+      .post-wrap.no-cover .post-article {
+        -webkit-line-clamp: 5;
+        line-clamp: 5;
+      }
+
+      @media (max-width: 991px) {
+        .post-wrap.no-cover {
+          min-height: 0;
+        }
+
+        .post-wrap.no-cover .post-info {
+          padding: 20px;
+        }
+      }
+
+      .jade-player {
+        position: fixed;
+        left: 24px;
+        bottom: 24px;
+        z-index: 9999;
+        width: min(320px, calc(100vw - 48px));
+        padding: 12px;
+        border: 1px solid var(--color-border);
+        border-radius: 18px;
+        background: rgba(252, 250, 247, 0.96);
+        box-shadow: 0 16px 36px rgba(120, 108, 95, 0.14);
+        backdrop-filter: blur(14px);
+        -webkit-backdrop-filter: blur(14px);
+      }
+
+      .jade-player[hidden] {
+        display: none !important;
+      }
+
+      .jade-player__top {
+        display: grid;
+        grid-template-columns: 56px 1fr;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .jade-player__cover {
+        width: 56px;
+        height: 56px;
+        border-radius: 12px;
+        object-fit: cover;
+        box-shadow: 0 8px 20px rgba(120, 108, 95, 0.16);
+      }
+
+      .jade-player__meta {
+        min-width: 0;
+      }
+
+      .jade-player__eyebrow {
+        margin: 0 0 3px;
+        font-size: 10px;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #9a8f82;
+      }
+
+      .jade-player__title {
+        margin: 0;
+        font-size: 14px;
+        font-weight: 700;
+        color: #5c5145;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .jade-player__artist {
+        margin: 2px 0 0;
+        font-size: 12px;
+        color: #8f8172;
+      }
+
+      .jade-player__audio {
+        width: 100%;
+        margin-bottom: 10px;
+        accent-color: #b4a492;
+      }
+
+      .jade-player__playlist {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        max-height: 128px;
+        overflow: auto;
+      }
+
+      .jade-player__track {
+        width: 100%;
+        border: 0;
+        background: transparent;
+        border-radius: 12px;
+        padding: 8px 10px;
+        text-align: left;
+        cursor: pointer;
+        transition: background 0.2s ease;
+      }
+
+      .jade-player__track:hover {
+        background: rgba(216, 203, 189, 0.3);
+      }
+
+      .jade-player__track.is-active {
+        background: rgba(216, 203, 189, 0.22);
+      }
+
+      .jade-player__track-name {
+        display: block;
+        font-size: 13px;
+        color: #5c5145;
+      }
+
+      .jade-player__track-artist {
+        display: block;
+        margin-top: 2px;
+        font-size: 11px;
+        color: #8f8172;
+      }
+
+      @media (max-width: 767px) {
+        .jade-player {
+          left: 12px !important;
+          right: 12px !important;
+          bottom: 12px !important;
+          width: auto !important;
+        }
+
+        .jade-player__playlist {
+          max-height: 120px;
+        }
+      }
+    </style>
+  body_begin: # Inject code snippet right after <body>
+  body_end: |-
+    <section id="jade-player" class="jade-player">
+      <div class="jade-player__top">
+        <img class="jade-player__cover" src="/images/p7260478-by-sophearak-tha.jpg" alt="cover">
+        <div class="jade-player__meta">
+          <p class="jade-player__eyebrow">Now Playing</p>
+          <h3 class="jade-player__title" data-role="title">Yong Bei Ji Chang Qing Ge</h3>
+          <p class="jade-player__artist" data-role="artist">gareth.t</p>
+        </div>
+      </div>
+      <audio class="jade-player__audio" data-role="audio" controls preload="metadata" src="/music/gareth-t-yong-bei-ji-chang-qing-ge.mp3"></audio>
+      <ul class="jade-player__playlist" data-role="playlist"></ul>
+    </section>
+    <script>
+      (function () {
+        const playlist = [
+          {
+            name: "Yong Bei Ji Chang Qing Ge",
+            artist: "gareth.t",
+            url: "/music/gareth-t-yong-bei-ji-chang-qing-ge.mp3",
+            cover: "/images/p7260478-by-sophearak-tha.jpg"
+          },
+          {
+            name: "Quan Shi Jie Shi Mian",
+            artist: "Eason Chan",
+            url: "/music/eason-chan-quan-shi-jie-shi-mian.mp3",
+            cover: "/images/p7260478-by-sophearak-tha.jpg"
+          },
+          {
+            name: "Nian Nian",
+            artist: "Song Dongye",
+            url: "/music/song-dongye-nian-nian.mp3",
+            cover: "/images/p7260478-by-sophearak-tha.jpg"
+          },
+          {
+            name: "Zuo Zhuan Deng 1000 Times",
+            artist: "Patrick Brasca",
+            url: "/music/patrick-brasca-zuo-zhuan-deng-1000-times.mp3",
+            cover: "/images/p7260478-by-sophearak-tha.jpg"
+          },
+          {
+            name: "Jie Hun Ji",
+            artist: "Shui Xian Dou Huo Fo",
+            url: "/music/jie-hun-ji-shui-xian-dou-huo-fo.mp3",
+            cover: "/images/p7260478-by-sophearak-tha.jpg"
+          },
+          {
+            name: "Zhen De Ma Is It True",
+            artist: "Karen Mok",
+            url: "/music/karen-mok-zhen-de-ma-is-it-true.mp3",
+            cover: "/images/p7260478-by-sophearak-tha.jpg"
+          }
+        ];
+
+        const init = function () {
+          const root = document.getElementById("jade-player");
+          if (!root || root.dataset.initialized === "true" || !playlist.length) return;
+
+          const audio = root.querySelector('[data-role="audio"]');
+          const title = root.querySelector('[data-role="title"]');
+          const artist = root.querySelector('[data-role="artist"]');
+          const cover = root.querySelector(".jade-player__cover");
+          const playlistElement = root.querySelector('[data-role="playlist"]');
+          const storageKey = "jade-player-state";
+          let currentIndex = 0;
+
+          const readState = function () {
+            try {
+              const raw = localStorage.getItem(storageKey);
+              return raw ? JSON.parse(raw) : null;
+            } catch (error) {
+              return null;
+            }
+          };
+
+          const writeState = function (isPlayingOverride) {
+            try {
+              localStorage.setItem(
+                storageKey,
+                JSON.stringify({
+                  index: currentIndex,
+                  currentTime: Number.isFinite(audio.currentTime) ? audio.currentTime : 0,
+                  isPlaying: typeof isPlayingOverride === "boolean" ? isPlayingOverride : !audio.paused,
+                  volume: audio.volume
+                })
+              );
+            } catch (error) {}
+          };
+
+          const renderPlaylist = function () {
+            playlistElement.innerHTML = "";
+
+            playlist.forEach(function (track, index) {
+              const item = document.createElement("li");
+              const button = document.createElement("button");
+              const name = document.createElement("span");
+              const trackArtist = document.createElement("span");
+
+              button.type = "button";
+              button.className = "jade-player__track" + (index === currentIndex ? " is-active" : "");
+              button.addEventListener("click", function () {
+                loadTrack(index, true);
+              });
+
+              name.className = "jade-player__track-name";
+              name.textContent = track.name;
+              trackArtist.className = "jade-player__track-artist";
+              trackArtist.textContent = track.artist;
+
+              button.appendChild(name);
+              button.appendChild(trackArtist);
+              item.appendChild(button);
+              playlistElement.appendChild(item);
+            });
+          };
+
+          const loadTrack = function (index, autoplay, startTime) {
+            currentIndex = (index + playlist.length) % playlist.length;
+            const track = playlist[currentIndex];
+
+            title.textContent = track.name;
+            artist.textContent = track.artist;
+            audio.src = track.url;
+
+             if (typeof startTime === "number" && startTime > 0) {
+              const seekToSavedTime = function () {
+                audio.currentTime = startTime;
+              };
+              audio.addEventListener("loadedmetadata", seekToSavedTime, { once: true });
+            }
+
+            if (track.cover) {
+              cover.src = track.cover;
+            }
+
+            renderPlaylist();
+            writeState(autoplay);
+
+            if (autoplay) {
+              audio.play().then(function () {
+                writeState(true);
+              }).catch(function () {
+                writeState(false);
+              });
+            }
+          };
+
+          audio.volume = 0.7;
+          audio.addEventListener("ended", function () {
+            loadTrack(currentIndex + 1, true, 0);
+          });
+          audio.addEventListener("play", function () {
+            writeState(true);
+          });
+          audio.addEventListener("pause", function () {
+            writeState(false);
+          });
+          audio.addEventListener("timeupdate", function () {
+            writeState();
+          });
+          audio.addEventListener("volumechange", function () {
+            writeState();
+          });
+          window.addEventListener("pagehide", function () {
+            writeState();
+          });
+
+          const savedState = readState();
+          if (savedState && typeof savedState.volume === "number") {
+            audio.volume = savedState.volume;
+          }
+
+          if (savedState && typeof savedState.index === "number") {
+            loadTrack(savedState.index, false, savedState.currentTime || 0);
+            if (savedState.isPlaying) {
+              audio.play().then(function () {
+                writeState(true);
+              }).catch(function () {
+                writeState(false);
+              });
+            }
+          } else {
+            loadTrack(0, true, 0);
+          }
+
+          root.dataset.initialized = "true";
+        };
+
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", init, { once: true });
+        } else {
+          init();
+        }
+      })();
+    </script>
+  sidebar_begin: # Inject code snippet right after <aside>
+  sidebar_end: # Inject code snippet right before </aside>
+
+# Experimental, may have a lot of bugs, open with caution!
+pjax:
+  enable: true
+
+# Experimental
+# https://github.com/GoogleChromeLabs/quicklink
+quicklink:
+  enable: false
+  # The `requestIdleCallback` timeout, in milliseconds.
+  timeout: 3000
+  # Whether or not the URLs within the options.el container should be treated as high priority.
+  # When true, quicklink will attempt to use the fetch() API if supported (rather than link[rel=prefetch]).
+  priority: true
+  # Determine if a URL should be prefetched.
+  # Only support string
+  ignores: []
+
+# Experimental
+service_worker:
+  enable: false
+
+# Experimental
+live2d:
+  enable: false
+  position: left # left or right
+
+# Experimental
+live2d_widgets:
+  enable: false
+  position: left # left or right
+
+# https://github.com/CodeByZach/pace
+pace:
+  enable: true
+
+# Experimental
+# Please turn on pjax to use this feature
+player:
+  disable_on_mobile: false
+  position: before_sidebar # before_sidebar | after_sidebar | after_widget
+  # if you enable meting, you must enable aplayer first
+  aplayer:
+    # https://github.com/DIYgod/APlayer
+    enable: false
+    options:
+      # Put your local audio files under static/music/
+      # Example:
+      # audio:
+      #   - name: Song 1
+      #     artist: Unknown
+      #     url: /music/song-1.mp3
+      #     cover: /images/p7260478-by-sophearak-tha.jpg
+      #   - name: Song 2
+      #     artist: Unknown
+      #     url: /music/song-2.mp3
+      #     cover: /images/p7260478-by-sophearak-tha.jpg
+      audio:
+        - name: 鐢ㄨ儗鑴婂敱鎯呮瓕
+          artist: gareth.t
+          url: /music/gareth-t-yong-bei-ji-chang-qing-ge.mp3
+          cover: /images/p7260478-by-sophearak-tha.jpg
+      fixed: true
+      autoplay: false
+      loop: all
+      order: list
+      preload: auto
+      volume: 0.7
+      mutex: true
+      listFolded: false
+      lrcType: 0
+  meting:
+    # https://github.com/metowolf/MetingJS
+    # if you want to use meting, please enable aplayer first
+    enable: false
+    meting_api: # custom api
+    options:
+      id: 2265921590
+      server: netease
+      type: playlist
+      auto:
+
+########################################
+# pangu.js
+########################################
+
+pangu:
+  # more information: https://github.com/vinta/pangu.js 
+  enable: false  # enable pangu.js to add space between Chinese and English
+
+########################################
+# Theme
+########################################
+
+# experimental, may have a lot of bugs, open with caution!
+# A dynamic color generation tool based on Google's Material You design guidelines, capable of extracting primary colors from any image and generating complete light and dark color schemes.
+material_theme:
+  # more information: https://github.com/2061360308/material-theme
+  # notice: when you enable this feature, all the covers will be automatically added "crossorigin" attribute to support the dynamic color scheme
+  # so make sure your custom covers will not be blocked by the browser's CORS policy
+  enable: false # enable material_theme to generate dynamic color schemes based on the banner image
+
+internal_theme:
+  light:
+    --red-0: '#ff0000'
+    --red-1: '#ff5252'
+    --red-2: '#ff7c7c'
+    --red-3: '#ffafaf'
+    --red-4: '#ffd0d0'
+    --red-5: '#ffecec'
+    --red-5-5: '#fff3f3'
+    --red-6: '#fff7f7'
+    --color-red-6-shadow: 'rgba(255, 78, 78, 0.6)'
+    --color-red-3-shadow: 'rgba(255, 78, 78, 0.3)'
+
+    --highlight-nav: "#f5f5f5"
+    --highlight-scrollbar: "#d6d6d6"
+    --highlight-background: "#fdfdfd"
+    --highlight-selection: "#e9e9e988"
+    --highlight-foreground: "#24292e"
+    --highlight-comment: "#7d7d7d"
+    --highlight-red: "#d73a49"
+    --highlight-orange: "#e36209"
+    --highlight-yellow: "#cb911d"
+    --highlight-green: "#22863a"
+    --highlight-aqua: "#005cc5"
+    --highlight-blue: "#032f62"
+    --highlight-purple: "#6f42c1"
+    --highlight-deletion: "#b31d28"
+    --highlight-deletion-bg: "#ffeef0"
+    --highlight-addition: "#22863a"
+    --highlight-addition-bg: "#f0fff4"
+  dark:
+    --red-4: 'rgba(255, 208, 208, 0.5)'
+    --red-5: 'rgba(255,228,228,0.15)'
+    --red-5-5: 'rgba(255,236,236,0.05)'
+    --red-6: 'rgba(255, 243, 243, 0.2)'
+
+    --highlight-nav: "#222830"
+    --highlight-scrollbar: "#454d59"
+    --highlight-background: "#1e2027"
+    --highlight-selection: "#51515155"
+    --highlight-foreground: "#c9d1d9"
+    --highlight-comment: "#8b949e"
+    --highlight-red: "#ff7b72"
+    --highlight-orange: "#ffa657"
+    --highlight-yellow: "#ffcc66"
+    --highlight-green: "#7ee787"
+    --highlight-aqua: "#a5d6ff"
+    --highlight-blue: "#79c0ff"
+    --highlight-purple: "#d2a8ff"
+    --highlight-deletion: "#ffa198"
+    --highlight-deletion-bg: "#490202"
+    --highlight-addition: "#7ee787"
+    --highlight-addition-bg: "#04260f"
