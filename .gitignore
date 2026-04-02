@@ -2,5 +2,6 @@ public/
 resources/
 .hugo_build.lock
 temp-player-check.js
+.run/
 .DS_Store
 Thumbs.db
